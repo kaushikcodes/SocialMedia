@@ -1,2 +1,2 @@
-# socialmedia
-This is a social media website I created with the help of NodeJS and Embedded JavaScript.
+# Social Media
+This is a social media website I created with the help of NodeJS and Embedded JavaScript. In this website, the user enters their username and password to login. Once they do this, if the user's details do not match with any of the usernames in the existing database, the system adds the user to the database. The users can now create posts with a title and content and are free to view their previous posts. 
