@@ -1,0 +1,39 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+
+    <head> Profile </head>
+    <style>
+         
+        div {
+            width: 1000px;
+        }
+        p {
+            margin-bottom: 10px;
+            text-align: right;
+        }
+    </style>
+  </head>
+  <body>
+    <form action="/<%= id%>/create" method="GET">
+        <p>
+            <button> CREATE A POST </button>
+        </p>
+
+    </form>
+    <a> User's previous posts:</a>
+    <table>
+      <% for(var i = 1; i <= data.length; i++) { %>
+         <tr>
+           <td>
+            <a href="/posts/<%= data[data.length - i].id%>/<%= data[data.length - i].hashid%>"><%= data[data.length - i].title %> </a>
+          </td>
+         </tr>
+      <% } %>
+      </table>
+
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          User: 
+        </td>
+        <td>
+          <%= username %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Title of post: 
+        </td>
+        <td>
+          <%= data[0].title %>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Content of post: 
+        </td>
+        <td>
+          <%= data[0].content %>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Vote: 
+        </td>
+        <td>
+          <%= data[0].vote %>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          Timestamp: 
+        </td>
+        <td>
+          <%= data[0].timestamp %>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
